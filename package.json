@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "express": "^4.21.0",
     "express.js": "^1.0.0",
     "supervisor": "^0.12.0"
   }
