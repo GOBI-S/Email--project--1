@@ -8,11 +8,18 @@
 </head>
 <body>
     <div id="box">
-        <form action="https://www.youtube.com" method="get">
+        <form action="" method="get">
             <input type="email" id="E-mail" class="inpu" placeholder=" E-mail" required>
-            <button type="submit">Go...</button>
+            <button type="button" id="verifybutton">Verify</button>
+            <button type="submit" id="lanch">Go...</button>
         </form>
+    
+    <div id="locationmap">
+        <input type="text" id="addressInput" placeholder="Enter address" autocomplete="off">
+        <div id="suggestions" class="suggestions"></div>
+      
     </div>
-    <script src="client.js"></script>
+</div>
+    <script src="./client.js"></script>
 </body>
 </html>
