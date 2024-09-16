@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>email weather app</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Email Weather App</title>
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-    <div id="box">
-        <form action="" method="get">
-            <input type="email" id="E-mail" class="inpu" placeholder=" E-mail" required>
-            <button type="button" id="verifybutton">Verify</button>
-            <button type="submit" id="lanch">Go...</button>
-        </form>
-    
-    <div id="locationmap">
-        <input type="text" id="addressInput" placeholder="Enter address" autocomplete="off">
+  <div id="box">
+    <form action="" id="userForm" method="post">
+      <div class="input-group">
+        <input
+          type="email"
+          id="E-mail"
+          class="input"
+          placeholder="E-mail"
+          required
+        />
+        <button type="button" id="verifybutton" class="button">Verify</button>
+      </div>
+      <div id="locationmap">
+        <input
+          type="text"
+          id="addressInput"
+          placeholder="Enter address"
+          autocomplete="off"
+        />
         <div id="suggestions" class="suggestions"></div>
-      
-    </div>
-</div>
-    <script src="./client.js"></script>
+      </div>
+      <button type="button" id="lanch" class="button">Go...</button>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type="module" src="./client.js"></script>
 </body>
 </html>
